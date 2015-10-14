@@ -34,15 +34,15 @@
   \usepackage{ragged2e}
 %define some nice colors 
   \definecolor{lgreen} {RGB}{180,210,100}
-  \definecolor{dblue}  {RGB}{20,66,129}
+  \definecolor{dblue}  {RGB}{20,46,77}
   \definecolor{lred}   {RGB}{220,0,0}
   \definecolor{nred}   {RGB}{224,0,0}
   \definecolor{norange}{RGB}{230,120,20}
   \definecolor{nyellow}{RGB}{255,221,0}
-  \definecolor{ngreen} {RGB}{98,158,31}
-  \definecolor{dgreen} {RGB}{78,138,21}
-  \definecolor{nblue}  {RGB}{28,130,185}
-  \definecolor{jblue}  {RGB}{20,50,100}
+  \definecolor{ngreen} {RGB}{20,46,77}
+  \definecolor{dgreen} {RGB}{20,46,77}
+  \definecolor{nblue}  {RGB}{20,46,77}
+  \definecolor{jblue}  {RGB}{20,46,77}
 %set the basic colors
   \setbeamercolor{palette primary}   {fg=black,bg=white}
   \setbeamercolor{palette secondary} {fg=black,bg=white}
@@ -95,9 +95,9 @@
  \leavevmode
   \begin{columns}
 %jacobs logo column
-   \begin{column}{\logocolw}
+	\begin{column}{0.15\linewidth}
     \begin{center}
-     \includegraphics[width=\linewidth]{logo}
+     \includegraphics[width=0.9\linewidth]{logo}
     \end{center}
    \end{column}
 %title column
@@ -110,13 +110,15 @@
      \large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{fg}
      \large{\insertinstitute}\\[1ex]}
-        \vskip2cm
+    \usebeamercolor{date in headline}{\color{fg}
+    	\large{\insertdate}\\[1ex]}
+         \vskip2cm
       \end{column}
-%       \begin{column}{.2\linewidth}
-%         \begin{center}
-%           \includegraphics[width=0.9\linewidth]{logo}
-%         \end{center}
-%       \end{column}
+       \begin{column}{.15\linewidth}
+         \begin{center}
+           \includegraphics[width=0.9\linewidth]{logo2}
+         \end{center}
+       \end{column}
         \vspace{1cm}
     \end{columns}
 %\end{beamercolorbox}
